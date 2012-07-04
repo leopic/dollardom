@@ -1,0 +1,39 @@
+/* line 1, ../src-css/examples.scss */
+.has-js #message-no-js {
+  display: none;
+}
+
+/* line 5, ../src-css/examples.scss */
+.panel {
+  width: 70px;
+  height: 50px;
+}
+
+/* line 10, ../src-css/examples.scss */
+.square {
+  width: 70px;
+  height: 70px;
+}
+
+/* line 15, ../src-css/examples.scss */
+.red {
+  background-color: #d00;
+  border: 1px solid #800;
+}
+
+/* line 20, ../src-css/examples.scss */
+.absolute {
+  position: absolute;
+}
+
+/* line 24, ../src-css/examples.scss */
+.result {
+  position: relative;
+}
+
+/* line 28, ../src-css/examples.scss */
+pre {
+  background-color: #eee;
+  border-left: 2px solid #bbb;
+  padding: .2em .5em;
+}
