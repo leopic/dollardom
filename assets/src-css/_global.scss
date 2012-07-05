@@ -1,0 +1,21 @@
+a {
+  @include hover-link;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $dark-green;
+  }
+  &:hover {
+    color: $green;
+  }
+}
+
+body {
+  background: image-url('light_toast.png');
+}
+
+header {
+  @include border-radius(6px);
+  background: $dark-green; border-bottom: 0.5em solid $green; color: $white; margin: 1em 0; padding: 1em;
+}

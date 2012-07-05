@@ -12,23 +12,26 @@
     <script src="../assets/js/modernizr-2.5.3.min.js"></script>
   </head>
   <body>
+    <a target="_blank" href="https://github.com/julienw/dollardom"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     <div class="wrapper">
+      <h1>$dom.examples('chain');</h1>
+
       <p id='message-no-js'>This page needs Javascript to work.</p>
 	
-      <h1>Create an element</h1>
+      <h2>Create an element</h2>
       <pre class='sh_javascript_dom'>/* The 'panel' class sets width and height.
-      The 'red' class sets border and background color. */
-      $dom.select(".result")
-      .empty()
-      .append($dom.create('div.panel.red'));</pre>
+The 'red' class sets border and background color. */
+$dom.select(".result")
+    .empty()
+    .append($dom.create('div.panel.red'));</pre>
       <button id='create'>Execute this code !</button>
       <div class='result'></div>
 
-      <h1>Animate</h1>
+      <h2>Animate</h2>
       <pre class='sh_javascript_dom'>// "square" is the red squared absolute-positioned div
-      $dom.Get(".result")
-      .descendants("> .square")
-      .transform({ left: "150px", opacity: 0.2 });</pre>
+$dom.Get(".result")
+    .descendants("> .square")
+    .transform({ left: "150px", opacity: 0.2 });</pre>
       <button id='animate'>Execute this code !</button>
       <button id='animate-reset'>Go back !</button>
       <div class='result'>

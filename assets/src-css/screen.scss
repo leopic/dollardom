@@ -1,3 +1,9 @@
+@import "compass/utilities/links/hover-link";
+@import "compass/css3";
+
+// $dom variables
+@import "variables";
+
 // html5boilerplate base
 @import "h5bp";
 
@@ -9,3 +15,10 @@
 
 // page specific rules
 @import "examples";
+
+// global
+@import "global";
+
+// homepage
+@import "homepage";
+

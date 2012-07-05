@@ -1,0 +1,12 @@
+.documentation,
+.examples {
+  @include span-columns(5, 12);
+}
+
+.download {
+  @include span-columns(12, 12);
+}
+
+.license {
+  @include span-columns(2 omega, 12);
+}

@@ -1,0 +1,41 @@
+.js #message-no-js {
+  display: none;
+}
+
+.panel {
+  height: 5em; margin: 1em 0; width: 5em;
+}
+
+.square {
+  height: 5em; margin: 1em 0; width: 5em;
+}
+
+.red {
+  @include border-radius(6px);
+  background: red; border: 2px solid darken(red, 20%);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.result {
+  position: relative;
+}
+
+pre {
+  background-color: #eee; border-left: 0.25em solid $green; padding: .5em;
+}
+
+.code-example {
+  @include span-columns(6, 12);
+
+  pre {
+    min-height: 120px;
+  }
+}
+
+.animate-element {
+  @include omega;
+}
+
