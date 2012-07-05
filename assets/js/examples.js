@@ -1,10 +1,6 @@
 $dom.onready(init);
 
 function init() {
-	var body = document.body;
-	$dom.removeClass(body, "no-js");
-	$dom.addClass(body, "has-js");
-	
 	sh_highlightDocument();
 	setupExamples();
 }

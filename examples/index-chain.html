@@ -1,38 +1,44 @@
 <!doctype html>
-<html>
-<head>
-	<meta charset='utf-8' />
-	<title>$dom examples</title>
-	<link rel='stylesheet' href='sh_style.css' />
-	<link rel='stylesheet' href='examples.css' />
-</head>
-<body class='no-js'>
-	<p id='message-no-js'>This page needs Javascript to work.</p>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>$dom examples</title>
+    <meta name="description" content="Set of examples for the $dom Javascript library.">
+    <link rel="stylesheet" href="../assets/css/screen.css">
+    <script src="../assets/js/modernizr-2.5.3.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id='message-no-js'>This page needs Javascript to work.</p>
 	
-	<h1>Create an element</h1>
-	<pre class='sh_javascript_dom'>/* The 'panel' class sets width and height.
-   The 'red' class sets border and background color. */
-$dom.select(".result")
-  .empty()
-  .append($dom.create('div.panel.red'));</pre>
-	<button id='create'>Execute this code !</button>
-	<div class='result'></div>
-	
-	<h1>Animate</h1>
-	<pre class='sh_javascript_dom'>// "square" is the red squared absolute-positioned div
-$dom.Get(".result")
-  .descendants("> .square")
-  .transform({ left: "150px", opacity: 0.2 });</pre>
-	<button id='animate'>Execute this code !</button>
-	<button id='animate-reset'>Go back !</button>
-	<div class='result'>
-		<div class='square red absolute'></div>
-	</div>
-		
-	
-	<script src='../dollardom-chain-animate.min.js'></script>
-	<script src='sh_main.min.js'></script>
-	<script src='sh_javascript_dom.min.js'></script>
-	<script src='examples-chain.js'></script>
-</body>
+      <h1>Create an element</h1>
+      <pre class='sh_javascript_dom'>/* The 'panel' class sets width and height.
+      The 'red' class sets border and background color. */
+      $dom.select(".result")
+      .empty()
+      .append($dom.create('div.panel.red'));</pre>
+      <button id='create'>Execute this code !</button>
+      <div class='result'></div>
+
+      <h1>Animate</h1>
+      <pre class='sh_javascript_dom'>// "square" is the red squared absolute-positioned div
+      $dom.Get(".result")
+      .descendants("> .square")
+      .transform({ left: "150px", opacity: 0.2 });</pre>
+      <button id='animate'>Execute this code !</button>
+      <button id='animate-reset'>Go back !</button>
+      <div class='result'>
+        <div class='square red absolute'></div>
+      </div>
+    </div>
+
+    <script src='../dollardom-chain-animate.min.js'></script>
+    <script src='../assets/js/sh_main.min.js'></script>
+    <script src='../assets/js/sh_javascript_dom.min.js'></script>
+    <script src='../assets/js/examples-chain.js'></script>
+  </body>
 </html>

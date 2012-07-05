@@ -1,5 +1,5 @@
 /* line 1, ../src-css/examples.scss */
-.has-js #message-no-js {
+.js #message-no-js {
   display: none;
 }
 
