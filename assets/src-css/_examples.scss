@@ -24,18 +24,11 @@
 }
 
 pre {
-  background-color: #eee; border-left: 0.25em solid $green; padding: .5em;
+  background: $lightest-gray; color: $dark-gray; border-left: 0.25em solid $green; padding: .5em;
 }
 
 .code-example {
-  @include span-columns(6, 12);
-
-  pre {
-    min-height: 120px;
-  }
-}
-
-.animate-element {
-  @include omega;
+  @include span-columns(12 omega, 12);
+  margin: 0 0 1em 0;
 }
 

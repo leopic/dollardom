@@ -1,12 +1,12 @@
-.documentation,
-.examples {
-  @include span-columns(5, 12);
+.home-block {
+  &.examples,
+  &.why-dollardom,
+  &.download {
+    @include span-columns(4, 12);
+  }
+
+  &.download {
+    @include omega;
+  }
 }
 
-.download {
-  @include span-columns(12, 12);
-}
-
-.license {
-  @include span-columns(2 omega, 12);
-}

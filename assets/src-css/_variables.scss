@@ -2,3 +2,22 @@ $green: #8fc800;
 $dark-green: darken($green, 10%);
 $light-green: lighten($green, 10%);
 $white: #fff;
+$gold: #cdb671;
+$dark-gray: #333;
+$light-gray: #555;
+$lightest-gray: #eee;
+
+h1, h2, h3, h4, {
+  font-family: 'Homenaje', sans-serif;
+}
+
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../fonts/modernpics-webfont.eot');
+    src: url('../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/modernpics-webfont.woff') format('woff'),
+         url('../fonts/modernpics-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -8,64 +8,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>$dom</title>
     <meta name="description" content="5k Javascript library for selecting, styling, traversing and animating DOM elements.">
+    <link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/screen.css">
     <script src="assets/js/modernizr-2.5.3.min.js"></script>
   </head>
   <body>
     <a target="_blank" href="https://github.com/julienw/dollardom"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork $dom on GitHub"></a>
+    <header>
+      <h1><span class="dollar-sign">$</span>dom</h1>
+      <p><em>5k Javascript library for selecting, styling, traversing and animating DOM elements.</em></p>
+    </header>
+
     <div class="wrapper">
       <p id="message-no-js">This page needs Javascript to work.</p>
-      <header>
-        <h1><span class="dollar-sign" style="border-radius: 50px; background: gold; border: 4px solid yellow; padding: 6px 16px; display: inline-block; margin-right: 5px; ">$</span>dom</h1>
-        <p><em>5k Javascript library for selecting, styling, traversing and animating DOM elements.</em></p>
-        </header>
 
       <section class="home-block examples">
-      <h2>What can you do with $dom:</h2>
+        <h2>What can you do with $dom:</h2>
         <ul>
-          <li>Create elements.</li>
-          <li>Animate elements.</li>
+          <li><a href="examples/index.html#create-element">Create elements.</a></li>
+          <li><a href="examples/index.html#animate-element">Animate elements.</a></li>
           <li>Add/Remove/ToggleClasses.</li>
-          <li>Chain methods, ala jQuery.</li>
+          <li><a href="examples/index-chain.html">Chain methods, ala jQuery.</a></li>
         </ul>
-        <p>All in less than 5k in a fully-tested cross-browser IE6+ library. <a href="examples/">checkout more examples</a>.</p>
+        <p>Go <a href="doc/">through our API</a> and see all that you can do.</p>
       </section>
 
       <section class="home-block why-dollardom">
         <h2>Why $dom?</h2>
         <ul>
-          <li>Create elements.</li>
-          <li>Animate elements.</li>
-          <li>Add/Remove/ToggleClasses.</li>
+          <li>It's <em>small</em>: 2.3 kB for the minified/gzipped version.</li>
+          <li>It's <em>general</em>: it's not mobile-only or desktop-only. It's perfect for mobile-first or responsive design.</li>
+          <li>It doesn't include the features you don't need, e.g. Array iteration functions (forEach, map, reduce, etc.) or Ajax.</li>
         </ul>
       </section>
 
       <section class="home-block download">
         <h2>Download</h2>
         <p>You can clone the project with <a href="http://git-scm.com" target="_blank">Git</a> by running:</p>
-        <pre>$ git clone git://github.com/julienw/dollardom</pre>
+        <pre class="sh_sh">$ git clone git://github.com/julienw/dollardom</pre>
       </section>
 
-      <section class="home-block documentation">
-        <h3>Documentation</h3>
-        <p>Full documentation is available <a href="doc/">a click away</a>.</p>
-        </section>
-
-      <section class="home-block testing">
-        <h3>Do you test your code?</h3>
-        <p>Well yes, we use Jasmine, we currently have a complete suite of <a href="tests/core.html">our results</a> a click away.</p>
-      </section>
-
-      <section class="home-block license">
-        <h3>License</h3>
-        <p>Expat (BSD-like)</p>
-      </section>
+    <footer>
+      <p>Copyright (C) 2009, 2010, 2011 by Keith Clark (http://keithclark.co.uk)
+      Copyright 2011 by Julien Wajsberg <felash@gmail.com></p>
+      <p>Read full license over at <a href="https://github.com/julienw/dollardom/blob/master/LICENSE">https://github.com/julienw/dollardom/blob/master/LICENSE</a></p>
+    </footer>
 
     </div>
 
     <script src="dollardom-animate.min.js"></script>
     <script src="assets/js/sh_main.min.js"></script>
-    <script src="assets/js/sh_javascript_dom.min.js"></script>
+    <script src="assets/js/sh_sh.min.js"></script>
     <script type="text/javascript">
       $dom.onready(function(){
           sh_highlightDocument();

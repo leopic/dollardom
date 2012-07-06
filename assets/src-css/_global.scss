@@ -16,6 +16,26 @@ body {
 }
 
 header {
-  @include border-radius(6px);
-  background: $dark-green; border-bottom: 0.5em solid $green; color: $white; margin: 1em 0; padding: 1em;
+  background: #000 url('http://subtlepatterns.com/patterns/txture.png'); border-bottom: 0.5em solid $dark-green; color: $white; margin-bottom: 1em; padding: 1em; text-align: center;
+
+  h1 {
+    font-size: 72px; line-height: 0;
+  }
+
+  .dollar-sign {
+    color: $green;
+  }
+}
+
+header, footer {
+  clear: both;
+}
+
+footer {
+  @include inline-block;
+  border-top: 1px solid $dark-gray; padding: 0.5em 0; margin-top: 1em; width: 100%;
+}
+
+footer p {
+  font-size: 0.75em; color: $dark-gray;
 }
