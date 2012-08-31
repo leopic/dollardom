@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background: #000 url('http://subtlepatterns.com/patterns/txture.png'); border-bottom: 0.5em solid $dark-green; color: $white; margin-bottom: 1em; padding: 1em; text-align: center;
+  background: #000 url('http://subtlepatterns.com/patterns/txture.png'); border-bottom: 0.5em solid $dark-green; color: $white; margin-bottom: 1em; padding: 0.5em 1em 1em 1em; text-align: center;
 
   h1 {
     font-size: 72px; line-height: 0;
@@ -33,9 +33,16 @@ header, footer {
 
 footer {
   @include inline-block;
-  border-top: 1px solid $dark-gray; padding: 0.5em 0; margin-top: 1em; width: 100%;
+  border-top: 1px solid $dark-gray; padding: 0.5em; margin-top: 1em; width: 100%;
 }
 
 footer p {
   font-size: 0.75em; color: $dark-gray;
+}
+
+.topnav {
+  a {
+    @include inline-block;
+    font-size: 0.95em; margin-right: 0.5em; text-transform: lowercase;
+  }
 }
